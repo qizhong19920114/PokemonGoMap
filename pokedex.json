@@ -1,0 +1,7 @@
+{
+	"pokemons":[
+		{"pokeId":1, "name": "Bulbarsaur"},
+		{"pokeId":4, "name": "Charmander"},
+		{"pokeId":7, "name": "Squirtle"}
+	]
+}
