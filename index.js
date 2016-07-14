@@ -17,7 +17,7 @@ var MongoClient = mongodb.MongoClient;
 var url ='mongodb://localhost:27017/pokemon_map_db';
 
 //Lets connect to our database using the DB server URL.
-mongoose.connect(url);
+// mongoose.connect(url);
 
 var PokemonLoc = mongoose.model('PokemonLoc', {name: String, location: Array, timestamp: Number});
 
@@ -25,13 +25,13 @@ var bulbarsaur = new PokemonLoc({name: 'Bulbarsaur', location: [51.5034070, -0.1
 
 console.log(bulbarsaur);
 
-bulbarsaur.save(function (err, userObj) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('saved successfully:', userObj);
-  }
-});
+// bulbarsaur.save(function (err, userObj) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log('saved successfully:', userObj);
+//   }
+// });
 
 
 console.log(search.pokeSearch('Charmander', pokemonls) ? 'pokemon found!': 'pokemon not found!');
