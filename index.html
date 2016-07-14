@@ -64,7 +64,7 @@ limitations under the License.
             <p>Select a file below. When it is uploaded, a link will be displayed to the uploaded file.</p>
             <h6>Choose File</h6>
             <input type="file" id="file" name="file"/>
-            <h6>Upload successful:</h6>
+            <h6>Upload status:</h6>
             <span id="linkbox"></span>
           </div>
         </div>
@@ -99,7 +99,7 @@ limitations under the License.
         var url = uploadTask.snapshot.metadata.downloadURLs[0];
         console.log('File available at', url);
         // [START_EXCLUDE]
-        document.getElementById('linkbox').innerHTML = '<a href="' +  url + '">Click For File</a>';
+        document.getElementById('linkbox').innerHTML = '<a href="' +  url + '">Upload success</a>';
         // [END_EXCLUDE]
       });
       // [END oncomplete]
